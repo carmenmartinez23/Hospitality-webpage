@@ -1,0 +1,138 @@
+/*CUERPO*/
+
+body { 
+    background-image:url('img/Restaurante.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;/*Ajusta la imagen a la pantalla sin distorsionarla.*/
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed;/*La imagen se mueve mientras haces scroll*/
+}
+* {
+    box-sizing: border-box;
+}
+/* TEXTOS */
+h1,h3,p,nav,a, h2,label,input, textarea,legend {
+color: #fff;
+position: relative;
+    }
+label,input,textarea,span{
+    margin-left: 6cm;
+}
+h1{
+    font-family:-apple-system;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+th>p{
+    color: rgb(0, 0, 0);
+}
+h3,p,label,span{
+    color:white;
+    text-align: center;
+}
+div>fieldset>p{
+    text-align: left;
+    color: black;
+}
+input, textarea {
+    color:black;
+    }
+
+/* BOTONES */
+button {display: inline-block}
+    a.reservarboton{
+        background-color: rgba(223, 167, 63, 0.607);
+        border: 1px outset #eae9e9;
+        padding: .1em .5em;
+    }
+button.enviar{
+    background-color: rgb(255, 255, 255);
+    padding: .60em .60em;
+    border: #eae9e9;
+    margin-left: 15cm;
+    }
+    a>button.enviar:hover{
+        background-color:rgb(243, 192, 126);
+        }
+    
+/*MENU PRINCIPAL*/
+.navegacion {
+    width: 50%;
+}
+ul.menu {
+    /*ancho del menú*/
+    width: 200%;
+}
+.menu::after{content: "";clear: both;display: table;}
+.menu>li {
+    background-color: transparent;
+    display: inline-block; /* Orientación en horizontal*/
+    width: 16%;
+}
+.menu>li>a {
+    padding: 1em;/*separamos cada opción del menú de su borde izdo*/
+    display: block;/*hacemos que cada opción sea elemento de bloque (de esta forma todo el li será elemento activo)*/
+    text-decoration: none;
+    color:whitesmoke;
+    text-align: center;
+    letter-spacing: 3px;
+}
+.menu>li>a:hover {
+    color: rgb(203, 171, 88);
+}
+.menu>li>a.reservarboton:hover {
+    background-color: transparent;
+    }
+
+/*TABLAS Y APARTADOS*/
+table,tr,td,th {
+    background-color: #ffffff80;
+    border-collapse: collapse;
+    padding-right: 2.8cm;
+    padding-left: 1.94cm;
+    }
+div {
+    background-color: rgba(249, 249, 249, 0);
+    margin-top: 2cm;
+    margin-bottom: -1%;
+    margin-left: -1%;
+}
+fieldset.principio{
+    margin-left: 4cm;
+    margin-right:4cm;
+}
+p>table{
+    color: black;
+}
+div>table {
+    margin: -1cm;
+    margin-right: -0.22cm;
+    
+}
+div.reserva {
+    background-color: rgba(255, 255, 255, 0.496);
+    margin-top: 2%;
+    margin-bottom: -1%;
+    margin-left: 23%;
+    width: 20cm;    
+}
+div.reservaprincipio {
+    background-color: rgba(255, 255, 255, 0.496);
+    margin-top: 2%;
+    margin-bottom: -1%   
+}
+/*IMAGENES*/
+img.tiktok{
+    width: 100px;
+    height: 75px;
+}
+img.Instagram{
+    width: 50px;
+    height: 50px;   
+}
+.izquierda{
+    width: 8cm;
+    height: 6cm;
+    float: right;
+    margin-top: -5cm;
+}  

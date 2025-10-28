@@ -1,0 +1,164 @@
+/*   -- Para añadir sombreado a la página --
+   body:before {
+   content:'';
+   position: absolute;
+   top: 0;
+   bottom: -50cm;
+   left: 0;
+   right: 0;
+   background-color: rgba(0, 0, 0, 0);}*/
+
+   h1,h3,h2,p,nav,a {
+   color: #fff;
+   position: relative
+   }
+   h1{
+       font-family:-apple-system;
+       color: rgb(255, 255, 255);
+       text-align: center;
+   }
+   h3,h2,p{
+       color:rgb(46, 45, 45);
+       text-align: center;
+   }
+   body { 
+       background-image:url('img/Restaurante.jpeg');
+       background-repeat: no-repeat;
+       background-size: cover;/*Ajusta la imagen a la pantalla sin distorsionarla.*/
+       background-position: center; /* Centra la imagen */
+       background-attachment: fixed;/*La imagen se mueve mientras haces scroll*/
+   }
+   a {display: inline-block}
+       a.reservarboton{
+           background-color: rgba(223, 167, 63, 0.607);
+           border: 1px outset #eae9e9;
+           padding: .1em .5em;
+       }
+ 
+   * {
+       box-sizing: border-box;
+   }
+   .navegacion {
+       
+       width: 50%;
+   }
+   ul.menu {
+       
+       /*ancho del menú*/
+       width: 200%;
+   }
+   .menu::after{content: "";clear: both;display: table;}
+   .menu>li {
+       background-color: transparent;
+       display: inline-block; /* Orientación en horizontal*/
+       width: 16%;
+   }
+   .menu>li>a {
+       padding: 1em;/*separamos cada opción del menú de su borde izdo*/
+       display: block;/*hacemos que cada opción sea elemento de bloque (de esta forma todo el li será elemento activo)*/
+       text-decoration: none;
+       color:whitesmoke;
+       text-align: center;
+       letter-spacing: 3px;
+   }
+   .menu>li>a:hover {
+       color: rgb(203, 171, 88);
+   }
+   .menu>li>a.reservarboton:hover {
+       background-color: transparent;
+       }
+   div {
+       background-color: rgba(255, 255, 255, 0.825);
+       margin-top: 2%;
+       margin-bottom: -1%;
+       margin-left: -1%;
+   }
+   div.carta{
+       width: 500px;
+       border: 1px solid black;
+       padding: 20px;
+       margin: 20px;
+       text-align: justify;
+       width: 35cm;
+   }  
+   .finaldecarta {
+       color: rgb(159, 119, 45);
+       font-size: 25px;
+       width: 10cm;
+       margin: auto;
+   }
+
+   img.tiktok{
+       width: 100px;
+       height: 75px;
+   }
+   img.Instagram{
+       width: 50px;
+       height: 50px;
+       
+   }
+   div>table {
+       margin: 0cm;
+       margin-right: -0.22cm;}
+
+   table { margin-left: 0cm;}
+   table,tr,td,th {
+       background-color: #ffffff80;
+       border-collapse: collapse;
+       }
+   th,td {width: 20cm;}
+
+   .espacioinferior {padding:2cm;
+       line-height: 200%;
+       }
+
+/* GALERIA*/
+   .izquierda{
+       margin-left: 9cm;
+       width: 3cm;
+       height: 6cm;
+       float: left;
+   }  
+   .derecha{
+       margin-right: 8cm;
+       width: 5cm;
+       height: 6cm;
+       float: right ;
+       margin-top: -8cm;
+   }  
+   .centrarderecha{
+       text-align: center;
+       margin-top: 3cm;
+       margin-bottom: 3cm;
+       text-align: justify;
+       padding-left: 14cm;
+   }      
+   .centrarizquierda{
+       text-align: center;
+       margin-top: 3cm;
+       margin-bottom: 4cm;
+       text-align: justify;
+       margin-left: 6cm;
+       padding-right: 14cm;
+   }     
+   .calamar{
+       margin-left: 5cm;
+       width: 6cm;
+       height: 6cm;
+       float: left;
+       margin-top: 1cm;
+   }   
+   .carne{
+       margin-right: 8cm;
+       width: 5cm;
+       height: 6cm;
+       float: right ;
+       margin-top: -8cm;
+   }
+   .Postre{
+       width:5cm;
+       height: 5cm;
+       float: left;
+       margin-left: 6cm;
+       margin-top: 1cm;
+   } 

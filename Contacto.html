@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Necesidades Basicas -->
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0">
+    <link rel="stylesheet" href="contacto.css" type="text/css" media="all">
+    <link rel="shortcut icon" href="img/Logo.JPG" type="image/x-icon">
+    <title>Restaurante Saboreando</title>
+    
+</head>
+<!-- Diseño de página -->
+<body> 
+    <h1>SABOREANDO</h1>
+    <nav class="navegacion">
+        <ul class="menu">
+            <li><a href="Saboreando.html" title="Inicio">INICIO</a></li>
+            <li><a href="Quienes_somos.html" title="¿Quienes somos?">¿QUIENES SOMOS?</a></li>
+            <li><a href="Productos_y_servicios.html" title="Productos y servicios">PRODUCTOS Y SERVICIOS</a></li>
+            <li><a href="Contacto.html" title="Contacto">CONTACTO</a></li>
+            <li><a href="Trabaja_con_nosotros.html" title="Trabaja con nosotros">TRABAJA CON NOSOTROS</a></li>
+            <li><a class="reservarboton" href="Saboreando.html#Reservar" title="Reservar" ><strong>RESERVAR</strong></a></li>
+        </ul> 
+    </nav>  
+<table>
+<thead>
+    <tr>
+        <th>
+            <p id="Contacto">Horario de atención al público:</p> 
+        </th>
+        <th>
+            <p>Solicitud de información:</p>
+        </th>
+    </tr>
+</thead>
+<tbody>  
+    <tr>         
+        <td class="espacioinferior" >
+            <p><b>Comida</b><br>
+            L,M,X,J,V: 12:00-16:00<br>
+            S,D: 12:00-16:30<br>
+            <b>Cena</b><br>
+            L,M,X,J,V: 20:00-00:00<br>
+            S,D: 20:00-00:00<br>
+            <ins><strong>CONTACTO</strong></ins><br>
+            Calle Químico Antonio Soto, s/n, 41020<br>
+            957 87 65 64<br>
+            cmv0018@alu.medac.es</p>
+        </td>
+        
+        
+       <td> 
+        <form method="post" action="https://formsubmit.co/cmv0018@alu.medac.es">
+        <label>Introduzca su nombre:</label><br>
+        <input type="text" name="nombre" id="nombre" size="40" maxlength="30" value="" required>
+        <br>
+        <br>
+
+        <label>Introduzca su correo electronico:</label><br>
+        <input type="email" name="email" size="60" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+        <br>
+        <br>
+
+        <label>Introduzca su numero de telefono:</label><br>
+        <input type="tel" name="telefono" id="telefono" size="20"  maxlength="15" pattern="[0-9+]{9}" required>
+        <br>
+        <br>
+
+        <label id="descripcion">Describa que necesita:</label><br>
+        <textarea placeholder="Cualquier reserva o evento, alguna duda..." cols="50" rows="5" maxlength="20"></textarea>
+        <br>
+        <br>
+
+            <input class="enviar" type="submit" value="Enviar">
+    </form>
+    </td></tr>
+</tbody></table>
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th><a href="https://www.tiktok.com/@institutomedac" target="_blank"></a>
+                    <img class="tiktok" src="img/TikTok-Logo.wine.png" alt="Enlace a tiktok">
+                </th>
+                <th><p>TikTok: @institutomedac</p>
+                </th>
+                <th><a href="https://www.instagram.com/institutomedac/" target="_blank"></a>
+                    <img class="Instagram" src="img/1516920567instagram-png-logo-transparent.png" alt="Enlace a Instagram">
+                </th>
+                <th><p>Instagram: @institutomedac</p></th>    
+               <th>
+                <p>
+                    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                        <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="¡CSS Válido!">
+                    </a>
+                </p>
+                     
+
+               </th>
+               <th class="masgrande">
+
+               </th>
+            </tr>
+        </thead>
+    </table>
+</div>
+</body>
+</html>

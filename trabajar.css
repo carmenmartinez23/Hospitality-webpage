@@ -1,0 +1,137 @@
+/*BODY*/
+* {
+    box-sizing: border-box;
+    }
+body:before {
+content:'';
+position: absolute;
+top: 0;
+bottom: -19.3cm;
+left: 0;
+right: 0;
+background-color: rgba(0, 0, 0, 0.279);
+    }
+body { 
+    background-image:url('img/fondo_trabajar.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;/*Ajusta la imagen a la pantalla sin distorsionarla.*/
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed;/*La imagen se mueve mientras haces scroll*/
+    }
+
+    /*TEXTOS*/
+h1,h3,p,nav,a, h2,label,input, textarea,legend {
+color: #ffffff;
+position: relative;
+    }
+input, textarea {
+    color:black;
+    }
+th>p{
+    color: rgb(0, 0, 0);
+}
+h1{
+    font-family:-apple-system;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    }
+h3,h2,p {
+    color:white;
+    text-align:center;
+    }
+
+    /*BOTON*/
+
+a {display: inline-block}
+    a.reservarboton{
+        background-color: rgba(223, 167, 63, 0.607);
+        border: 1px outset #eae9e9;
+        padding: .1em .5em;
+    }
+a>input.enviar{
+    background-color: rgb(255, 255, 255);
+    padding: .60em .60em;
+    border: #eae9e9;
+    }
+    a>input.enviar:hover{
+    background-color:rgb(243, 192, 126);
+    }
+
+    /*MENU SUPERIOR*/
+.navegacion {  
+    width: 50%;
+    }
+ul.menu {
+    /*ancho del menú*/
+    width: 200%;
+    }
+.menu::after{content: "";clear: both;display: table;}
+.menu>li {
+    background-color: transparent;
+    display: inline-block; /* Orientación en horizontal*/
+    width: 16%;
+    }
+.menu>li>a {
+    padding: 1em;/*separamos cada opción del menú de su borde izdo*/
+    display: block;/*hacemos que cada opción sea elemento de bloque (de esta forma todo el li será elemento activo)*/
+    text-decoration: none;
+    color:whitesmoke;
+    text-align: center;
+    letter-spacing: 3px;
+    }
+.menu>li>a:hover {
+    color: rgb(203, 171, 88);
+    }
+.menu>li>a.reservarboton:hover {
+    background-color: transparent;
+    }
+
+/*TABLAS Y DIV*/
+table { margin-left: 8cm;}
+table,tr,td,th {
+    background-color: #ffffff80;
+    border-collapse: collapse;
+    }
+th,td {width: 20cm;}
+
+.espacioinferior {padding:2cm;
+    line-height: 200%;
+    }
+
+fieldset{
+    border-color:rgb(203, 171, 88);
+    }
+
+
+
+
+/*IMAGENES*/
+img.tiktok{
+    width: 100px;
+    height: 75px;
+}
+img.Instagram{
+    width: 50px;
+    height: 50px;
+    
+}
+
+/*FOOTER*/
+
+div {
+    background-color: rgba(255, 255, 255, 0);
+    margin-top: 2.7%;
+    margin-bottom: -1%;
+    margin-left: -0.5cm;
+
+}
+div>table {
+    margin: 0cm;
+    margin-right: -0.22cm;
+}
+table,tr,td,th {
+    background-color: #ffffff80; 
+    border-collapse: collapse;
+    padding-right:2.8cm;
+    padding-left: 1.09cm;
+    }

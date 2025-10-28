@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Necesidades Basicas -->
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0">
+    <link rel="stylesheet" href="trabajar.css" type="text/css" media="all">
+    <link rel="shortcut icon" href="img/Logo.JPG" type="image/x-icon">
+    <title>Restaurante Saboreando</title>
+</head>
+<!-- Diseño de página -->
+<body> 
+    <h1>SABOREANDO</h1>
+    <nav class="navegacion">
+        <ul class="menu">
+            <li><a href="Saboreando.html" title="Inicio">INICIO</a></li>
+            <li><a href="Quienes_somos.html" title="¿Quienes somos?">¿QUIENES SOMOS?</a></li>
+            <li><a href="Productos_y_servicios.html" title="Productos y servicios">PRODUCTOS Y SERVICIOS</a></li>
+            <li><a href="Contacto.html" title="Contacto">CONTACTO</a></li>
+            <li><a href="Trabaja_con_nosotros.html" title="Trabaja con nosotros">TRABAJA CON NOSOTROS</a></li>
+            <li><a class="reservarboton" href="Saboreando.html#Reservar" title="Reservar" ><strong>RESERVAR</strong></a></li>
+        </ul> 
+    </nav>  
+<table>
+    <tbody>
+        <tr>
+            <td class="espacioinferior">
+                <form method="post" action="https://formsubmit.co/cmv0018@alu.medac.es">
+                    <fieldset><legend><h2>Datos Personales</h2></legend>
+                        <label>Nombre:*</label>
+                        <input type="text" name="nombre" id="nombre" size="30" maxlength="30" value="" required>
+                        <br>
+                        <label>Apellidos:*</label>
+                        <input type="text" name="apellidos" id="apellidos" size="35" maxlength="30" value="" required>
+                        <br>
+                        <label>DNI:*</label>
+                        <input type="text" name="DNI" id="DNI" size="10" maxlength="9" value="" placeholder="00000000A" pattern="{0-9A-Za-z}" required>
+                        <br>
+                        <label>Sexo:</label>
+                        <input type="text" name="Sexo" id="Sexo" size="11" maxlength="11" value="" >
+                        <br>
+                        <label>Fecha de nacimiento:*</label>
+                        <input type="date" name="Fecha de nacimiento" id="Fecha_de_nacimiento" size="11" value="" required>
+                        <br>
+                        <label>Ciudad:*</label>
+                        <input type="text" name="Ciudad" id="Ciudad" size="30" maxlength="44" value="" pattern="{a-zA-Z.0-9}" required>
+                        <br>
+                        <label>Nacionalidad:*</label>
+                        <input type="text" name="Nacionalidad" id="Nacionalidad" size="30" maxlength="50" value="" pattern="{a-zA-Z.0-9}" required>
+                        <br>
+                        <label>Código Postal:*</label>
+                        <input type="text" name="Codigo Postal" id="Codigo_Postal" size="20" maxlength="5" value="" required>
+                        <br>
+                        <label>Telefono:*</label>
+                        <input type="tel" name="telefono" id="telefono" size="20"  maxlength="15" pattern="[0-9+]{9}" required>
+                        <br>
+                        <label>Email:*</label>
+                        <input type="email" name="email" size="45" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                        <br> 
+                    </fieldset>
+                    
+                    <fieldset><legend><h2>Formación</h2></legend>
+                        <p><label>Añade aquí tus titulaciones:* (mínimo una)</label><br>
+                            <input type="text" name="titulacion[]" maxlength="30" required>
+                            <input type="number" name="anio_inicio[]" min="1900" max="2100" placeholder="Inicio" required>
+                            <input type="number" name="anio_final[]" min="1900" max="2100" placeholder="Final" required>
+                        <br>
+                        <input type="text" name="titulacion[]" maxlength="30" >
+                        <input type="number" name="anio_inicio[]" min="1900" max="2100" placeholder="Inicio" >
+                        <input type="number" name="anio_final[]" min="1900" max="2100" placeholder="Final" >
+                        <br>
+                        <input type="text" name="titulacion[]" maxlength="30" >
+                        <input type="number" name="anio_inicio[]" min="1900" max="2100" placeholder="Inicio" required>
+                        <input type="number" name="anio_final[]" min="1900" max="2100" placeholder="Final" required></p>
+                    </fieldset>
+                    <fieldset id="contenedor-campos"><legend><h2>Idiomas</h2></legend>
+                        <p><label>¿Qué idiomas hablas?:* (mínimo uno)</label><br>
+                        <input type="text" name="idiomas" id="idiomas" size="30" maxlength="30" value="" required> 
+                        <select name="idiomas">
+                            <option value="" selected="selected">Selecciona un nivel</option>
+                            <option value="1">Hablado</option>
+                            <option value="2">Escrito</option>
+                            <option value="3">Leido</option>
+                        </select>
+                        <select name="Nivel">
+                            <option value="" selected="selected">Selecciona un nivel</option>
+                            <option value="1">Excelente</option>
+                            <option value="2">Bien</option>
+                            <option value="3">Regular</option>
+                            <option value="4">Nada</option>
+                        </select> 
+                        
+                        <input type="text" name="idiomas"  size="30" maxlength="30" value=""> 
+
+                        <select name="idiomas">
+                            <option value="" selected="selected">Selecciona un nivel</option>
+                            <option value="1">Hablado</option>
+                            <option value="2">Escrito</option>
+                            <option value="3">Leido</option>
+                        </select>
+                        <select name="Nivel">
+                            <option value="" selected="selected">Selecciona un nivel</option>
+                            <option value="1">Excelente</option>
+                            <option value="2">Bien</option>
+                            <option value="3">Regular</option>
+                            <option value="4">Nada</option>
+                        </select>
+                        <input type="text" name="idiomas" size="30" maxlength="30" value="" > 
+                        <select name="idiomas">
+                            <option value="" selected="selected">Selecciona un nivel</option>
+                            <option value="1">Hablado</option>
+                            <option value="2">Escrito</option>
+                            <option value="3">Leido</option>
+                        </select>
+                        <select name="Nivel">
+                            <option value="" selected="selected">Selecciona un nivel</option>
+                            <option value="1">Excelente</option>
+                            <option value="2">Bien</option>
+                            <option value="3">Regular</option>
+                            <option value="4">Nada</option>
+                        </select></p>
+                       
+                    </fieldset>
+
+                    
+                    <br>
+                    <div> * - Campo obligatorio</div>
+                    <input class="enviar" type="submit" value="Enviar">
+                    
+                </form>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th><a href="https://www.tiktok.com/@institutomedac" target="_blank"></a>
+                        <img class="tiktok" src="img/TikTok-Logo.wine.png" alt="Enlace a tiktok">
+                    </th>
+                    <th><p>TikTok: @institutomedac</p>
+                    </th>
+                    <th><a href="https://www.instagram.com/institutomedac/" target="_blank"></a>
+                        <img class="Instagram" src="img/1516920567instagram-png-logo-transparent.png" alt="Enlace a Instagram">
+                    </th>
+                    <th><p>Instagram: @institutomedac</p></th>    
+                   <th>
+                    <p>
+                        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                            <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="¡CSS Válido!">
+                        </a>
+                    </p>
+                   </th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+</body>
+
+</html>
