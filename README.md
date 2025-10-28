@@ -1,2 +1,2 @@
 # Hospitality-webpage
-# First Proyect with HTML and CSS.
+First Proyect with HTML and CSS.
